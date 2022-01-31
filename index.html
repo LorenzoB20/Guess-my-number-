@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my bumber by Lorenzo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+    <div class="container-fluid">
+          <div class="row pt-3">
+            <div class="col-3">
+              <button type="button" class="again">Again!</button>
+            </div>
+            <div class="col-6">
+              <h1 class="titolo pt-5 titolo">Guess My Number!</h1>
+              <p class="between text-center">(Between 1 and 50)</p>
+            </div>
+            <div class="col-3">           <p class="text-white text-right highscores">🥇 Highscores:
+                <p class="text-white text-center"> 1.  <span id="highscore1">0</span></p>
+                <p class="text-white text-center"> 2.  <span id="highscore2">0</span></p>
+                <p class="text-white text-center"> 3.  <span id="highscore3">0</span></p>
+              </p></div>
+          </div>
+        </div>
+          <hr style="border: 2px solid white; background-color: white; margin-top: 50px;">
+        </header>
+        <main>
+                <div class="container-fluid">
+          <div class="row pt-5 pr-5 pl-5">
+            <div class="col-4 text-center">
+                <p class="numerosegreto">?</p>           
+                <p class="text-white" id="messaggio">Start guessing...</p>
+            </div>
+            <div class="col-4 text-center pt-5">         
+                 <p class="text-white punti" style="font-size: xx-large;">💯 Score: <span id="score">25</span></p>
+                 <img src="assets/img/italianflag.png" type="button" style="margin-top: 200px; width: 10%;" id="itaflag">
+            </div>
+            <div class="col-4 text-center pt-2">
+                <input type="number" class="guess" />
+                <p><button type="button" class="check">Check!</button></p></div>
+          </div>
+        </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
